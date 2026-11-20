@@ -67,4 +67,90 @@ public class Lista {
         temp.setProximo(null);
         return aux;
     }
+
+    public boolean contem(int valor){
+        No temp = primeiro;
+        while (temp != null){
+            if (temp.getInfo() == valor){
+                return true;
+            }
+            temp = temp.getProximo();
+        }
+        return false;
+    }
+
+    public int conta(int valor){
+        int contador = 0;
+        No temp = primeiro;
+        while (temp != null){
+            if (temp.getInfo() == valor){
+                contador++;
+            }
+            temp = temp.getProximo();
+        }
+        return contador;
+    }
+
+    public int maior() {
+        if (listaVazia()) {
+        throw new IllegalStateException("Lista vazia.");
+        }
+    
+        int maior = primeiro.getInfo();
+        No temp = primeiro.getProximo();
+    
+        while (temp != null) {
+            if (temp.getInfo() > maior) {
+                maior = temp.getInfo();
+            }
+            temp = temp.getProximo();
+        }
+            return maior;
+    }
+
+    public int menor() {
+        if (listaVazia()) {
+        throw new IllegalStateException("Lista vazia.");
+        }
+    
+        int menor = primeiro.getInfo();
+        No temp = primeiro.getProximo();
+    
+        while (temp != null) {
+            if (temp.getInfo() < menor) {
+            menor = temp.getInfo();
+            }
+            temp = temp.getProximo();
+        }
+        return menor;
+    }
+
+    public int soma() {
+        if (listaVazia()) {
+            throw new IllegalStateException("Lista vazia.");
+        }
+    
+        int total = 0;
+        No temp = primeiro;
+    
+        while (temp != null) {
+            total += temp.getInfo();
+            temp = temp.getProximo();
+        }
+        return total;
+    }
+
+    public double media() {
+        if (listaVazia()) {
+            throw new IllegalStateException("Lista vazia.");
+        }
+    
+        int qtd = 0;
+        No temp = primeiro;
+        while (temp != null) {
+        qtd++;
+        temp = temp.getProximo();
+        }
+        return (double) soma() / qtd;
+    }
 }
