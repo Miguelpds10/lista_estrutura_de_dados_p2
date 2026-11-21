@@ -21,6 +21,24 @@ public class Fila {
             ultimo = null;
         return p;
     }
+
+    // Exercício 8: devolve a Pessoa da frente SEM remover; null se a fila estiver vazia
+    public Pessoa espiaFrente() {
+        if (estaVazia()) return null;
+        return primeiro.getInfo(); // não altera primeiro
+    }
+
+    // Exercício 8: devolve o número de elementos (percorre a fila: O(n))
+    public int tamanho() {
+        int contador = 0;
+        No temp = primeiro;
+        while (temp != null) {
+            contador++;
+            temp = temp.getProximo();
+        }
+        return contador;
+    }
+
     @Override 
     public String toString() {
         if (estaVazia()) return "fila vazia";
@@ -33,4 +51,3 @@ public class Fila {
         return s + "//";
     }
 }
-
