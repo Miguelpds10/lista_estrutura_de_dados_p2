@@ -36,20 +36,19 @@ Lista-Exercicios-2/
 │   ├── Fila.java                  -> fila (FIFO)
 │   ├── No.java                    -> nó com dado do tipo Pessoa
 │   ├── Pessoa.java                -> nome e ano de nascimento
+│   ├── TesteExercicio5.java       -> Exercício 5
 │   ├── TesteFila.java             -> Exercício 6
 │
 ├── listas_ligadas/                         -> Seção 1: Lista Ligada Simples
 │   ├── Lista.java                 -> lista ligada simples
 │   ├── No.java                    -> nó com dado do tipo int
+│   ├── TesteAtendimento9.java      -> Exercício 9
 │   ├── TesteExercicio4.java       -> Exercício 4
+│   ├── TesteExercicio8.java       -> Exercício 8
 │   ├── TesteLista.java            -> Exercício 2
 │   ├── TesteLista2.java           -> Exercício 3
-│   ├── TesteNo.java               -> Exercício 1
-│
-├── Fila.java                  -> Exercício 5d 
-├── TesteExercicio5.java       -> Exercício 5
-├── TesteExercicio8.java       -> Exercício 8
-└── TesteAtendimento.java      -> Exercício 9
+└──  ── TesteNo.java               -> Exercício 1
+
 ```
 ---
 
